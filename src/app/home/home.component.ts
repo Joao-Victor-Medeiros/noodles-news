@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {HomeService} from "./home.service";
-import {News} from "./news";
 
 @Component({
   selector: 'app-home',
