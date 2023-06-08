@@ -9,6 +9,8 @@ import { HeaderComponent } from './home/header/header.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatListModule} from "@angular/material/list";
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {MatListModule} from "@angular/material/list";
     MatToolbarModule,
     FlexLayoutModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

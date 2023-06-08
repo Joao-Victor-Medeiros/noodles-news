@@ -2,10 +2,10 @@
 
 }
 
-.title2 {
+.title {
   background-color: #FDF5E6;
   font-size: 1.2rem;
-  margin-left: 25%;
+  margin-left: 2%;
   margin-top: 10%;
 }
 
@@ -18,20 +18,20 @@
   font-style: italic;
 }
 
-.divider {
-  position: absolute;
-  width: 65%;
-  margin-top: 0%;
-  right: 15%;
-  top: 15%;
-  margin-bottom: -40%;
-}
-
 .date {
   font-size: 10px;
   font-weight: 500;
   font-style: italic;
-  margin-left: 52%;
+  margin-left: 36%;
+}
+
+.divider {
+  position: absolute;
+  width: 65%;
+  margin-top: 2%;
+  right: 16%;
+  top: 15%;
+  margin-bottom: -40%;
 }
 
 span {
@@ -43,6 +43,11 @@ span {
   top: 1%;
 }
 
+@media screen and (max-width: 380px) and (max-height: 680px) {
+  .divider{
+    top:20%;
+  }
+}
 /*.title {*/
 /*  position: relative;*/
 /*  background-color: #FDF5E6;*/

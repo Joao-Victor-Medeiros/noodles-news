@@ -1,10 +1,11 @@
 #mobile part bellow
 .container {
-  width: 100%;
-  position: absolute;
-  top: 40%;
+
 }
 
+.card {
+  max-width: 100%;
+}
 
 @media screen and (min-width: 1280px) {
 
