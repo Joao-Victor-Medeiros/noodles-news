@@ -1,17 +1,37 @@
-.title {
+.top {
+
+}
+
+.title2 {
   background-color: #FDF5E6;
   font-size: 1.2rem;
-}
-.subheader {
-  height: 10%;
   margin-left: 25%;
-  width: 100%;
-}
-mat-divider{
-  position: absolute;
-  width: 60%;
   margin-top: 10%;
-  margin-right: 50%;
+}
+
+.tax {
+  position: absolute;
+  right: 5%;
+  top: 1%;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.divider {
+  position: absolute;
+  width: 65%;
+  margin-top: 0%;
+  right: 15%;
+  top: 15%;
+  margin-bottom: -40%;
+}
+
+.date {
+  font-size: 10px;
+  font-weight: 500;
+  font-style: italic;
+  margin-left: 52%;
 }
 
 span {
@@ -23,21 +43,59 @@ span {
   top: 1%;
 }
 
+/*.title {*/
+/*  position: relative;*/
+/*  background-color: #FDF5E6;*/
+/*  font-size: 1.2rem;*/
+/*  margin-left: 80%;*/
+/*}*/
+
+/*.subheader {*/
+/*  margin-top: 15%;*/
+/*  font-size: 0.8rem;*/
+/*  margin-right: 50%;*/
+/*}*/
+
+/*mat-divider {*/
+/*  position: absolute;*/
+/*  width: 60%;*/
+/*  margin-top: 10%;*/
+/*  margin-right: 110%;*/
+/*}*/
+
+/*mat-list-item {*/
+/*  position: relative;*/
+/*  left: -145%;*/
+/*}*/
+
+/*span {*/
+/*  font-size: 10px;*/
+/*  font-weight: 500;*/
+/*  font-style: italic;*/
+/*  position: absolute;*/
+/*  right: -10%;*/
+/*  bottom: 100%;*/
+/*  color: rosybrown;*/
+/*}*/
+
 @media screen and (min-width: 1020px) {
   .subheader {
     height: 50%;
     margin-left: 30%;
     width: 100%;
   }
-  mat-divider{
+
+  mat-divider {
     position: absolute;
     width: 50%;
     margin-bottom: 8%;
     margin-right: 60%;
   }
+
   mat-list-item {
     margin-left: 15%;
   }
+
   h3 {
     font-size: 3rem;
     font-weight: 500;
