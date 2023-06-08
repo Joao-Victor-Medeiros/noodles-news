@@ -48,6 +48,20 @@ span {
     top:17%;
   }
 }
+
+@media screen and (min-width: 1080px){
+  .divider{
+    margin-top: 10%;
+    left: 38%;
+    display: flex;
+  }
+
+  .date {
+    font-size: 1rem;
+    margin-left: 37%;
+  }
+
+}
 /*.title {*/
 /*  position: relative;*/
 /*  background-color: #FDF5E6;*/
