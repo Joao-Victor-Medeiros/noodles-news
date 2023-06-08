@@ -8,7 +8,7 @@ import {HomeService} from "./home.service";
 })
 export class HomeComponent {
   response: any = [];
-  result: number = 0;
+  imageUrl: String[] = [];
 
   constructor(private service: HomeService) {
   }
@@ -17,6 +17,22 @@ export class HomeComponent {
     this.service.listNewsFromToday().subscribe((data: any) => {
       console.log(data.results);
       this.response = data.results;
+      for (let i = 0; i < this.response.length; i++) {
+        // this.result = data.results.multimedia;
+        this.imageUrl = this.response[i].multimedia[0];
+        console.log(this.imageUrl);
+      }
     });
+    this.trimImage()
+  }
+
+  trimImage() {
+   for (let i = 0; i < this.response.length; i++) {
+     console.log(this.response[i].title);
+     // if (any[i].multimedia.length > 0) {
+     //   this.result = i;
+     //   break;
+     // }
+   }
   }
 }
