@@ -5,12 +5,12 @@
 
 .card {
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1080px) {
 
-  .vertical_dotted_line
-  {
+  .vertical_dotted_line {
     position: absolute;
     left: 15%;
     border-left: 2px dotted green;

@@ -1,17 +1,16 @@
-
 <div
   class="container"
   fxLayout="column"
   fxLayoutAlign="start center"
 >
-  <div fxLayout="column" fxFlex.gt-sm="100%" class="card">
-  <mat-card *ngFor="let res of response">
+  <div fxLayout="column" fxFlex.gt-sm="100%" class="card" *ngFor="let res of response">
+  <mat-card>
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{res.title}}</mat-card-title>
       <mat-card-subtitle>{{res.byline}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a notice">
+    <img mat-card-image [src]="res.multimedia[0].url" alt="Photo of a notice">
     <mat-card-content>
       <p>
         {{res.abstract}}
