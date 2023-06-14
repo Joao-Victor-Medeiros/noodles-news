@@ -2,6 +2,7 @@
   class="container"
   fxLayout="column"
   fxLayoutAlign="start center"
+  fxHide.gt-md="true"
 >
   <div fxLayout="column" fxFlex.gt-sm="100%" class="card" *ngFor="let res of response">
   <mat-card>
@@ -24,5 +25,14 @@
   </div>
 </div>
 
-<div class="vertical_dotted_line"></div>
+<carousel [noPause]="false" class="container" fxShow.gt-md="true">
+  <slide *ngFor="let res of response">
+    <img [src]="res.multimedia[0].url" alt="first slide" style="display: inline; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>{{res.title}}</h3>
+      <p>{{res.abstract}}</p>
+    </div>
+  </slide>
+</carousel>
+<!--<div class="vertical_dotted_line"></div>-->
 
