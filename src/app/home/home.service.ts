@@ -9,7 +9,7 @@ export class HomeService {
     'x-nycapi-key': 'Fyqt2mxOQ6A7SoVMJxioOasRKuWgybYa'
   })
 
-  private readonly API_URL = 'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=Fyqt2mxOQ6A7SoVMJxioOasRKuWgybYa';
+  private readonly API_URL = 'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=QR9032s7qU05pg8RRQmMypjGbr0diwgJ';
 
   constructor(private http: HttpClient) { }
 
