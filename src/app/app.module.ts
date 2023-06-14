@@ -11,6 +11,8 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {CarouselModule} from "ngx-bootstrap/carousel";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {MatButtonModule} from "@angular/material/button";
     MatDividerModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
