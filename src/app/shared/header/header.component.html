@@ -1,0 +1,54 @@
+<div>
+  <span class="tax">Price: free</span>
+  <div fxLayout="row"
+       fxLayoutAlign="center center"
+       fxLayoutAlign.xs="center center"
+       fxLayoutAlign.gt-sm="center center"
+       fxLayoutAlign.gt-md="center center"
+  >
+    <div>
+      <mat-toolbar class="title">
+        <h3>Angular Material 2 App</h3>
+      </mat-toolbar>
+    </div>
+  </div>
+  <div class="date" fxLayout="row" fxLayoutAlign.md="center center" fxLayoutAlign.xl="center center"
+       fxLayoutAlign.gt-md="center center" fxLayoutAlign.gt-xs="center center">
+    <mat-list>
+      <mat-list-item>NYC , november, 28</mat-list-item>
+    </mat-list>
+  </div>
+</div>
+
+<div fxShow.gt-md="true" fxHide.gt-sm="true" fxHide.gt-xs="true" fxLayout="row" fxLayoutAlign.gt-md="center center">
+  <mat-toolbar class="tool-bar">
+    <div>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <span class="example-spacer"></span>
+    <div fxLayoutAlign.gt-md="center center" fxShow="true" fxHide.lt-md="true" class="nav-itens">
+      <a mat-button routerLink="/about-us">Business</a>
+      <a mat-button routerLink="/automobiles">Automobile</a>
+      <a mat-button routerLink="/start-page">Health</a>
+      <a mat-button routerLink="/offer">Art</a>
+      <a mat-button routerLink="/offer">Technology</a>
+      <a mat-button routerLink="/contact">Crosswords</a>
+    </div>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true" class="example-container">
+      <div fxLayout="column">
+        <a mat-button routerLink="/about-us">Business</a>
+        <a mat-button routerLink="/prices">Automobile</a>
+        <a mat-button routerLink="/start-page">Health</a>
+        <a mat-button routerLink="/offer">Art</a>
+        <a mat-button routerLink="/offer">Technology</a>
+        <a mat-button routerLink="/contact">Crosswords</a>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>
+
