@@ -1,6 +1,9 @@
-# NoodlesNews
 
+
+# NoodlesNews
+To run this project, you need to have Node.js installed on your computer. You can download it from [here](https://nodejs.org/en/).
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+remenber to do a npm install before running the project.
 
 ## Development server
 
