@@ -18,13 +18,25 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
 import { AppRoutingModule } from './app-routing.module';
 import { AutomobileComponent } from './components/automobile/automobile.component';
+import { BusinessComponent } from './components/business/business.component';
+import { ArtsComponent } from './components/arts/arts.component';
+import { HealthComponent } from './components/health/health.component';
+import { TechnologyComponent } from './components/technology/technology.component';
+import { CrosswordsComponent } from './components/crosswords/crosswords.component';
+import { FoodComponent } from './components/food/food.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    AutomobileComponent
+    AutomobileComponent,
+    BusinessComponent,
+    ArtsComponent,
+    HealthComponent,
+    TechnologyComponent,
+    CrosswordsComponent,
+    FoodComponent
   ],
   imports: [
     BrowserModule,
