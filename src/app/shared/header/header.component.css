@@ -139,4 +139,8 @@ mat-icon {
     left: 8%;
     top: 18%;
   }
+
+  span{
+    font-size: 1.0rem;
+  }
 }
