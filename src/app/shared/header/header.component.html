@@ -23,8 +23,8 @@
 <div fxShow.gt-md="true" fxHide.gt-sm="true" fxHide.gt-xs="true" fxLayout="row" fxLayoutAlign.gt-md="center center">
   <mat-toolbar class="tool-bar">
     <div>
-      <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
+      <button routerLink="home" mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>home</mat-icon>
       </button>
     </div>
 
@@ -32,10 +32,10 @@
     <div  fxShow="true" fxHide.lt-md="true" class="nav-itens">
       <a mat-button routerLink="/automobiles">Automobile</a>
       <a mat-button routerLink="/business">Business</a>
-      <a mat-button routerLink="/start-page">Health</a>
-      <a mat-button routerLink="/offer">Art</a>
-      <a mat-button routerLink="/offer">Technology</a>
-      <a mat-button routerLink="/contact">Crosswords</a>
+      <a mat-button routerLink="/health">Health</a>
+      <a mat-button routerLink="/arts">Art</a>
+      <a mat-button routerLink="/technologies">Technology</a>
+      <a mat-button routerLink="/food">Food</a>
     </div>
   </mat-toolbar>
   <mat-sidenav-container fxFlexFill>
@@ -43,10 +43,10 @@
       <div fxLayout="column">
         <a mat-button routerLink="/automobiles">Automobile</a>
         <a mat-button routerLink="/business">Business</a>
-        <a mat-button routerLink="/start-page">Health</a>
-        <a mat-button routerLink="/offer">Art</a>
-        <a mat-button routerLink="/offer">Technology</a>
-        <a mat-button routerLink="/contact">Crosswords</a>
+        <a mat-button routerLink="/health">Health</a>
+        <a mat-button routerLink="/arts">Art</a>
+        <a mat-button routerLink="/technologies">Technology</a>
+        <a mat-button routerLink="/crosswords">Gameplay</a>
       </div>
     </mat-sidenav>
   </mat-sidenav-container>
